@@ -114,8 +114,10 @@ export default function Ventures() {
                                 className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
                                 loading="lazy"
                                 onError={(e) => {
+                                  const target = e.target as HTMLImageElement;
+                                  target.onerror = null;
                                   if (fallback) {
-                                    (e.target as HTMLImageElement).src = fallback;
+                                    target.src = fallback;
                                   }
                                 }}
                               />

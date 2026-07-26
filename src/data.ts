@@ -129,15 +129,15 @@ export const ventures = [
     highlights: ['Curated Designer & Ethnic Collections', 'Bespoke Traditional & Modern Apparel', 'Custom Fitting & Tailoring Services', 'Supporting Local Textile Traditions'],
     images: [
       blushImg,
-      'https://images.unsplash.com/photo-1550614000-4b95d4edfa40?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80'
+      hero1,
+      cut1,
+      shovaRai
     ],
     imageFallbacks: [
       '/Blush.jpeg',
-      '',
-      '',
-      ''
+      '/hero1.jpg',
+      '/cut1.jpg',
+      '/shova_rai.jpg'
     ],
     imageCaptions: [
       'Blush Boutique Storefront & Collection Showcase',
@@ -229,9 +229,9 @@ export const galleryImages = [
   { category: 'Cutting Edge Salon', url: hairSalon1 },
   { category: 'Master Styling & Studio', url: shovaRai },
   { category: 'Entrepreneurship & Leadership', url: heroImg },
-  { category: 'Blush Fashion Boutique', url: hero1 },
-  { category: 'Handcrafted Pickle & Spices', url: 'https://images.unsplash.com/photo-1589149091530-02ba441b490d?auto=format&fit=crop&q=80' },
-  { category: 'Heritage Block Printing', url: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80' }
+  { category: 'Blush Fashion Boutique', url: blushImg },
+  { category: 'Handcrafted Pickle & Spices', url: pickle1 },
+  { category: 'Heritage Block Printing', url: block1 }
 ];
 
 export const nationalInitiatives = [
