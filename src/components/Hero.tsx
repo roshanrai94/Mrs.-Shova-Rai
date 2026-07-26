@@ -1,10 +1,21 @@
 import { motion } from 'motion/react';
 import { heroContent } from '../data';
 import { Award, ChevronDown } from 'lucide-react';
+import heroImg from '../assets/Hero.jpg';
 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0c0b09] pt-24 pb-16">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src={heroImg} 
+          alt="Mrs. Shova Rai - Entrepreneur & Visionary" 
+          className="w-full h-full object-cover opacity-30 object-center mix-blend-overlay"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0c0b09]/80 via-[#0c0b09]/60 to-[#0c0b09]"></div>
+      </div>
+
       {/* High-fashion ambient gold dust background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-[10%] left-[20%] w-[45vw] h-[45vw] max-w-[600px] rounded-full bg-amber-500/10 blur-[120px]"></div>
