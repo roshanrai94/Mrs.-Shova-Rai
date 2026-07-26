@@ -99,25 +99,25 @@ export const ventures = [
     description: 'Established in 2007 in the heart of Gangtok, Cutting Edge Hair & Beauty is a pioneer in professional hair care and personal grooming in Sikkim. Combining modern international styling techniques with warm hospitality, the salon offers high-end hair transformations, skin care treatments, bridal packages, and personalized styling consultations.',
     highlights: ['Expert Styling & Transformations', 'Premium Hair & Skincare Products', 'Personalised Grooming Consultations', 'Professional Skill Training Workshops'],
     images: [
-      cut1,
-      cut2,
-      cut3,
       hairSalon1,
-      shovaRai
+      shovaRai,
+      cut3,
+      cut1,
+      cut2
     ],
     imageFallbacks: [
-      '/cut1.jpg',
-      '/cut2.jpg',
+      '/hair_salon_1.jpg',
+      '/shova_rai.jpg',
       '/Cut3.jpg',
-      '',
-      ''
+      '/cut1.jpg',
+      '/cut2.jpg'
     ],
     imageCaptions: [
-      'Cutting Edge Salon & Styling Showcase 1',
-      'Cutting Edge Salon & Styling Showcase 2',
-      'Cutting Edge Brand & Academy Emblem',
       'Salon Ambience & Hair Care Station',
-      'Mrs. Shova Rai at Work'
+      'Mrs. Shova Rai at Work',
+      'Cutting Edge Brand & Academy Emblem',
+      'Cutting Edge Salon & Styling Showcase 1',
+      'Cutting Edge Salon & Styling Showcase 2'
     ]
   },
   {

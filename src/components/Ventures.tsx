@@ -110,7 +110,6 @@ export default function Ventures() {
                               <img 
                                 src={img} 
                                 alt={`${venture.title} visual ${imgIdx + 1}`}
-                                referrerPolicy="no-referrer"
                                 className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
                                 loading="lazy"
                                 onError={(e) => {

@@ -91,7 +91,7 @@ export default function About() {
                   src={shovaRai} 
                   alt="Mrs. Shova Rai" 
                   className="w-full h-auto object-cover filter contrast-[1.05]"
-                  referrerPolicy="no-referrer"
+                  
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0c0b09] via-transparent to-transparent opacity-80"></div>
               </div>
