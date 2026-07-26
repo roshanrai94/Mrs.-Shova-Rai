@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { aboutContent } from '../data';
 import { Sparkles, Award, ShieldCheck } from 'lucide-react';
-import heroImg from '../assets/Hero.jpg';
+import shovaRai from '../assets/shova_rai.jpg';
 
 export default function About() {
   return (
@@ -27,7 +27,7 @@ export default function About() {
                 <h2 className="text-xs font-sans tracking-[0.25em] text-amber-400 uppercase font-bold">Digital Legacy & Vision</h2>
               </div>
               <h3 className="text-4xl sm:text-5xl font-serif text-white leading-tight font-normal">
-                Empowering Communities Through <span className="text-gradient-gold">Passion & Purpose</span>
+                Empowering Communities Through <span className="text-white font-semibold">Passion & Purpose</span>
               </h3>
             </div>
             
@@ -86,9 +86,9 @@ export default function About() {
             className="lg:col-span-5 relative"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.9)] border-2 border-amber-500/30 bg-[#161311] p-2">
-              <div className="relative rounded-2xl overflow-hidden">
+              <div className="relative rounded-2xl overflow-hidden group">
                 <img 
-                  src={heroImg || "/Hero.jpg"} 
+                  src={shovaRai} 
                   alt="Mrs. Shova Rai" 
                   className="w-full h-auto object-cover filter contrast-[1.05]"
                   referrerPolicy="no-referrer"

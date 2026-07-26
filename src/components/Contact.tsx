@@ -31,7 +31,7 @@ export default function Contact() {
             <h2 className="text-xs font-sans tracking-[0.25em] text-amber-400 uppercase font-bold">Atelier Concierge</h2>
           </div>
           <h3 className="text-4xl md:text-5xl font-serif text-white font-normal">
-            Get in <span className="text-gradient-gold">Touch</span>
+            Get in <span className="text-white font-semibold">Touch</span>
           </h3>
         </div>
 

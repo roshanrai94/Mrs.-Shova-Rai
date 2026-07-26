@@ -51,7 +51,7 @@ export default function Impact() {
             <h2 className="text-xs font-sans tracking-[0.25em] text-amber-400 uppercase font-bold">Community Legacy</h2>
           </div>
           <h3 className="text-4xl md:text-5xl font-serif text-white font-normal">
-            Empowering Through <span className="text-gradient-gold">Skill Development</span>
+            Empowering Through <span className="text-white font-semibold">Skill Development</span>
           </h3>
         </div>
 

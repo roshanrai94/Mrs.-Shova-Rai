@@ -39,7 +39,7 @@ export default function Milestones() {
               <h2 className="text-xs font-sans tracking-[0.25em] text-amber-400 uppercase font-bold">Why Choose</h2>
             </div>
             <h3 className="text-3xl md:text-4xl font-serif text-white mb-8 font-normal">
-              A Legacy of <span className="text-gradient-gold">Trust & Quality</span>
+              A Legacy of <span className="text-white font-semibold">Trust & Quality</span>
             </h3>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -69,7 +69,7 @@ export default function Milestones() {
               <h2 className="text-xs font-sans tracking-[0.25em] text-amber-400 uppercase font-bold">National Alignment</h2>
             </div>
             <h3 className="text-3xl md:text-4xl font-serif text-white mb-8 font-normal">
-              National <span className="text-gradient-gold">Initiatives</span>
+              National <span className="text-white font-semibold">Initiatives</span>
             </h3>
             
             <div className="flex flex-wrap gap-3">

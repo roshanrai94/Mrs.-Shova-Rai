@@ -46,11 +46,11 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-[#F3D56B] via-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent;
+    @apply text-white;
   }
 
   .text-gradient-gold {
-    @apply bg-gradient-to-r from-[#FFF0B3] via-[#F3D56B] to-[#D4AF37] bg-clip-text text-transparent;
+    @apply text-white;
   }
 
   .gold-divider {

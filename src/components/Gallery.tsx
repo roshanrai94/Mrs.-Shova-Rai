@@ -13,35 +13,35 @@ export default function Gallery() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-2 mb-3">
             <Sparkles size={16} className="text-amber-400" />
             <h2 className="text-xs font-sans tracking-[0.25em] text-amber-400 uppercase font-bold">Editorial Collection</h2>
           </div>
-          <h3 className="text-4xl md:text-5xl font-serif text-white font-normal">
-            Visual <span className="text-gradient-gold">Chronicles</span>
+          <h3 className="text-4xl md:text-5xl font-serif text-white font-normal mb-2">
+            Visual <span className="text-white font-semibold">Chronicles</span>
           </h3>
         </div>
 
-        {/* Couture Masonry Grid */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-          {galleryImages.map((img, idx) => (
+        {/* 2-Column Grid (Two photos in one line each, 6 photos total) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+          {galleryImages.slice(0, 6).map((img, idx) => (
             <motion.div 
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: (idx % 3) * 0.08 }}
-              className="relative group overflow-hidden rounded-2xl break-inside-avoid border border-amber-500/25 bg-[#14120f] shadow-2xl hover:border-amber-400/60 transition-all duration-500 cursor-pointer"
+              transition={{ delay: (idx % 2) * 0.1 }}
+              className="relative group overflow-hidden rounded-2xl border border-amber-500/25 bg-[#14120f] shadow-2xl hover:border-amber-400/60 transition-all duration-500 cursor-pointer aspect-[16/10]"
               onClick={() => setSelectedImage(img.url)}
             >
               <img 
                 src={img.url} 
                 alt={img.category} 
-                className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 filter brightness-[0.9] contrast-[1.05]"
+                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 filter brightness-[0.9] contrast-[1.05]"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <span className="inline-flex items-center gap-1.5 text-xs text-amber-400 font-mono uppercase tracking-widest font-bold mb-1">
                   <Eye size={14} /> Tap to expand
                 </span>

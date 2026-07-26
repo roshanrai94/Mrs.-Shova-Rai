@@ -12,6 +12,32 @@ import {
   Clock
 } from 'lucide-react';
 
+import hairSalon1 from './assets/hair_salon_1.jpg';
+import shovaRai from './assets/shova_rai.jpg';
+import heroImg from './assets/Hero.jpg';
+import hero1 from './assets/hero1.jpg';
+import review1 from './assets/Review1.jpg';
+import review2 from './assets/Review2.jpg';
+import review3 from './assets/Review3.jpg';
+import review4 from './assets/Review4.jpg';
+import review5 from './assets/Review5.jpg';
+import review6 from './assets/Review6.jpg';
+import award1 from './assets/Award1.jpeg';
+import award2 from './assets/Award2.jpeg';
+import award3 from './assets/Award3.jpeg';
+import award4 from './assets/Award4.jpg';
+import award5 from './assets/Award5.jpeg';
+import award6 from './assets/Award6.jpg';
+import cut1 from './assets/cut1.jpg';
+import cut2 from './assets/cut2.jpg';
+import cut3 from './assets/Cut3.jpg';
+import blushImg from './assets/Blush.jpeg';
+import pickle1 from './assets/Pickle1.png';
+import pickle2 from './assets/Pickle2.png';
+import block1 from './assets/Block1.jpeg';
+import block2 from './assets/Block2.jpeg';
+import block3 from './assets/Block3.jpeg';
+
 export const navigation = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
@@ -66,51 +92,101 @@ export const journeyTimeline = [
 
 export const ventures = [
   {
+    id: 'cutting-edge',
     title: 'Cutting Edge Hair & Beauty',
     est: '2007',
-    description: 'A premier hair and beauty destination in Gangtok offering world-class styling and grooming services.',
-    highlights: ['Expert Styling', 'Premium Products', 'Personalised Consultations'],
+    tagline: 'Premier Styling & Grooming Sanctuary',
+    description: 'Established in 2007 in the heart of Gangtok, Cutting Edge Hair & Beauty is a pioneer in professional hair care and personal grooming in Sikkim. Combining modern international styling techniques with warm hospitality, the salon offers high-end hair transformations, skin care treatments, bridal packages, and personalized styling consultations.',
+    highlights: ['Expert Styling & Transformations', 'Premium Hair & Skincare Products', 'Personalised Grooming Consultations', 'Professional Skill Training Workshops'],
     images: [
-      'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1521590832167-7bfc17484d20?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1600948836101-f9ff09c1f016?auto=format&fit=crop&q=80'
+      cut1,
+      cut2,
+      cut3,
+      hairSalon1,
+      shovaRai
+    ],
+    imageFallbacks: [
+      '/cut1.jpg',
+      '/cut2.jpg',
+      '/Cut3.jpg',
+      '',
+      ''
+    ],
+    imageCaptions: [
+      'Cutting Edge Salon & Styling Showcase 1',
+      'Cutting Edge Salon & Styling Showcase 2',
+      'Cutting Edge Brand & Academy Emblem',
+      'Salon Ambience & Hair Care Station',
+      'Mrs. Shova Rai at Work'
     ]
   },
   {
+    id: 'blush-fashion',
     title: 'Blush Fashion Store',
     est: '2010',
-    description: 'A curated fashion boutique bringing contemporary trends and elegant traditional wear.',
-    highlights: ['Curated Collections', 'Bridal Wear', 'Custom Tailoring'],
+    tagline: 'Curated Boutique & Designer Apparel',
+    description: 'A Boutique established in 2010, offering curated fashion and supporting local textile traditions.',
+    highlights: ['Curated Designer & Ethnic Collections', 'Bespoke Traditional & Modern Apparel', 'Custom Fitting & Tailoring Services', 'Supporting Local Textile Traditions'],
     images: [
+      blushImg,
       'https://images.unsplash.com/photo-1550614000-4b95d4edfa40?auto=format&fit=crop&q=80',
       'https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&q=80'
+      'https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80'
+    ],
+    imageFallbacks: [
+      '/Blush.jpeg',
+      '',
+      '',
+      ''
+    ],
+    imageCaptions: [
+      'Blush Boutique Storefront & Collection Showcase',
+      'Curated Ethnic & Designer Collections',
+      'Bespoke Fashion & Apparel',
+      'Boutique Interior & Custom Fitting'
     ]
   },
   {
-    title: 'Zayel\'s Pickle',
+    id: 'zayels-pickle',
+    title: "A Taste of Sikkim Zayel's Pickle",
     est: 'FSSAI Registered',
-    description: 'Authentic Himalayan flavours preserved in jars, crafted with traditional recipes and love.',
-    highlights: ['Organic Ingredients', 'Traditional Recipes', 'FSSAI Certified'],
+    tagline: 'Authentic Himalayan Culinary Heritage',
+    description: "A regional food brand utilizing locally sourced organic Himalayan ingredients with formal FSSAI registration captures the rich culinary heritage of the region, producing artisanal homemade pickles of Filinge & Silam Traditional local condiments of Sikkim, Himalayan Timbur Szechuan pepper — a prized regional spice, Matar Mula Peas and radish pickle, plus meat-based varieties, Lapsi Achar Traditional hog plum pickle-tangy, spicy and rich in authentic Himalayan flavour.",
+    highlights: ['Filinge & Silam Traditional Local Condiments', 'Himalayan Timbur Szechuan Pepper Pickles', 'Matar Mula (Peas & Radish) & Meat Varieties', 'Lapsi Achar (Tangy Hog Plum Pickle)'],
     images: [
-      'https://images.unsplash.com/photo-1589149091530-02ba441b490d?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1626202419088-75c179116e10?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1596647976822-48df92c10651?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1506459225024-1428097a7e18?auto=format&fit=crop&q=80'
+      pickle1,
+      pickle2
+    ],
+    imageFallbacks: [
+      '/Pickle1.png',
+      '/Pickle2.png'
+    ],
+    imageCaptions: [
+      "Zayel's Himalayan Pickle Product Pack 1",
+      "Zayel's Authentic Sikkim Gourmet Pickle 2"
     ]
   },
   {
-    title: 'Block Printing & Arts',
-    est: 'Creative Initiative',
-    description: 'Preserving and innovating through creative expressions in block printing and fine arts.',
-    highlights: ['Handcrafted Designs', 'Sustainable Practices', 'Art Exhibitions'],
+    id: 'block-printing',
+    title: 'Block Printing and Art',
+    est: 'Launch Phase',
+    tagline: 'First Block Printing Initiative in Sikkim',
+    description: 'A pioneering new venture — believed to be the first block printing initiative in Sikkim — currently in its launch phase. Mrs. Rai initiating the handcrafted block printing and blending cultural heritage with contemporary textile design.',
+    highlights: ['Pioneering Block Printing in Sikkim', 'Handcrafted Woodblock Textile Designs', 'Blending Cultural Heritage with Modern Style', 'Empowering Local Craft Artisans'],
     images: [
-      'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1606041011872-596597976b25?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1580136608260-4eb11f4b24fe?auto=format&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&q=80'
+      block1,
+      block2,
+      block3
+    ],
+    imageFallbacks: [
+      '/Block1.jpeg',
+      '/Block2.jpeg',
+      '/Block3.jpeg'
+    ],
+    imageCaptions: [
+      'Handcrafted Block Printing Artwork 1',
+      'Artisan Woodblock Print Design 2',
+      'Traditional Sikkim Heritage Textile Craft 3'
     ]
   }
 ];
@@ -150,16 +226,12 @@ export const milestones = [
 ];
 
 export const galleryImages = [
-  { category: 'Entrepreneurship', url: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80' },
-  { category: 'Salon', url: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80' },
-  { category: 'Boutique', url: 'https://images.unsplash.com/photo-1550614000-4b95d4edfa40?auto=format&fit=crop&q=80' },
-  { category: 'Pickle Products', url: 'https://images.unsplash.com/photo-1589149091530-02ba441b490d?auto=format&fit=crop&q=80' },
-  { category: 'Block Printing', url: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80' },
-  { category: 'Awards', url: 'https://images.unsplash.com/photo-1531685250784-7569952593d2?auto=format&fit=crop&q=80' },
-  { category: 'Community Activities', url: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80' },
-  { category: 'Training Programmes', url: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80' },
-  { category: 'Public Speaking', url: 'https://images.unsplash.com/photo-1475721028070-2046f56c8022?auto=format&fit=crop&q=80' },
-  { category: 'Art & Paintings', url: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&q=80' }
+  { category: 'Cutting Edge Salon', url: hairSalon1 },
+  { category: 'Master Styling & Studio', url: shovaRai },
+  { category: 'Entrepreneurship & Leadership', url: heroImg },
+  { category: 'Blush Fashion Boutique', url: hero1 },
+  { category: 'Handcrafted Pickle & Spices', url: 'https://images.unsplash.com/photo-1589149091530-02ba441b490d?auto=format&fit=crop&q=80' },
+  { category: 'Heritage Block Printing', url: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80' }
 ];
 
 export const nationalInitiatives = [
@@ -167,7 +239,49 @@ export const nationalInitiatives = [
 ];
 
 export const testimonials = [
-  { name: 'Sita M.', role: 'Student Entrepreneur', content: 'Mrs. Rai\'s baking training gave me the skills and confidence to start my own home bakery. She is a true inspiration to women in Sikkim.' },
-  { name: 'Rohan Sharma', role: 'Customer', content: 'Cutting Edge isn\'t just a salon, it\'s an experience. The professionalism and warmth you get there is unmatched in Gangtok.' },
-  { name: 'Karma Bhutia', role: 'SHG Member', content: 'The pickle making workshop organized by Shova ma\'am has helped our group generate a steady income. We are forever grateful.' }
+  { 
+    name: 'Sita M.', 
+    role: 'Student Entrepreneur', 
+    image: review1,
+    content: 'Mrs. Rai\'s baking training gave me the skills and confidence to start my own home bakery. She is a true inspiration to women in Sikkim.' 
+  },
+  { 
+    name: 'Rohan Sharma', 
+    role: 'Customer', 
+    image: review2,
+    content: 'Cutting Edge isn\'t just a salon, it\'s an experience. The professionalism and warmth you get there is unmatched in Gangtok.' 
+  },
+  { 
+    name: 'Karma Bhutia', 
+    role: 'SHG Member', 
+    image: review3,
+    content: 'The pickle making workshop organized by Shova ma\'am has helped our group generate a steady income. We are forever grateful.' 
+  },
+  { 
+    name: 'Pema Lepcha', 
+    role: 'Boutique Client', 
+    image: review4,
+    content: 'The custom ethnic designs from Blush Boutique are exquisite. Mrs. Rai brings Sikkim tradition to contemporary couture.' 
+  },
+  { 
+    name: 'Anil Pradhan', 
+    role: 'Community Partner', 
+    image: review5,
+    content: 'Collaborating with Mrs. Shova Rai on skill development workshops across Gangtok has empowered hundreds of youth.' 
+  },
+  { 
+    name: 'Sunita Chettri', 
+    role: 'Trainee & Entrepreneur', 
+    image: review6,
+    content: 'Learning hair styling and salon management at Cutting Edge changed my life. I now manage my own successful studio.' 
+  }
+];
+
+export const awardPhotos = [
+  { id: 1, title: 'Award & Honour Recognition', image: award1, fallbackImage: '/Award1.jpeg' },
+  { id: 2, title: 'Award & Honour Recognition', image: award2, fallbackImage: '/Award2.jpeg' },
+  { id: 3, title: 'Award & Honour Recognition', image: award3, fallbackImage: '/Award3.jpeg' },
+  { id: 4, title: 'Award & Honour Recognition', image: award4, fallbackImage: '/Award4.jpg' },
+  { id: 5, title: 'Award & Honour Recognition', image: award5, fallbackImage: '/Award5.jpeg' },
+  { id: 6, title: 'Award & Honour Recognition', image: award6, fallbackImage: '/Award6.jpg' },
 ];

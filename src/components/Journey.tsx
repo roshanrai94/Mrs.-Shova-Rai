@@ -27,7 +27,7 @@ export default function Journey() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-serif text-white font-normal"
           >
-            Two Decades of Excellence, <span className="text-gradient-gold">Empowerment & Trust</span>
+            Two Decades of Excellence, <span className="text-white font-semibold">Empowerment & Trust</span>
           </motion.h3>
         </div>
 
