@@ -32,8 +32,8 @@ import cut1 from './assets/cut1.jpg';
 import cut2 from './assets/cut2.jpg';
 import cut3 from './assets/Cut3.jpg';
 import blushImg from './assets/Blush.jpeg';
-import pickle1 from './assets/Pickle1.png';
-import pickle2 from './assets/Pickle2.png';
+import pickle1 from './assets/Pickle1.PNG';
+import pickle2 from './assets/Pickle2.PNG';
 import block1 from './assets/Block1.jpeg';
 import block2 from './assets/Block2.jpeg';
 import block3 from './assets/Block3.jpeg';
@@ -158,8 +158,8 @@ export const ventures = [
       pickle2
     ],
     imageFallbacks: [
-      '/Pickle1.png',
-      '/Pickle2.png'
+      '/Pickle1.PNG',
+      '/Pickle2.PNG'
     ],
     imageCaptions: [
       "Zayel's Himalayan Pickle Product Pack 1",
