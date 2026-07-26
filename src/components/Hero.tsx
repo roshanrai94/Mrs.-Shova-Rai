@@ -11,7 +11,7 @@ export default function Hero() {
         <img 
           src={heroImg} 
           alt="Mrs. Shova Rai - Entrepreneur & Visionary" 
-          className="w-full h-full object-cover opacity-30 object-center mix-blend-overlay"
+          className="w-full h-full object-cover opacity-40 object-center mix-blend-screen"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0c0b09]/80 via-[#0c0b09]/60 to-[#0c0b09]"></div>
       </div>

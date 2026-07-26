@@ -12,31 +12,31 @@ import {
   Clock
 } from 'lucide-react';
 
-import hairSalon1 from './assets/hair_salon_1.jpg';
-import shovaRai from './assets/shova_rai.jpg';
-import heroImg from './assets/Hero.jpg';
-import hero1 from './assets/hero1.jpg';
-import review1 from './assets/Review1.jpg';
-import review2 from './assets/Review2.jpg';
-import review3 from './assets/Review3.jpg';
-import review4 from './assets/Review4.jpg';
-import review5 from './assets/Review5.jpg';
-import review6 from './assets/Review6.jpg';
-import award1 from './assets/Award1.jpeg';
-import award2 from './assets/Award2.jpeg';
-import award3 from './assets/Award3.jpeg';
-import award4 from './assets/Award4.jpg';
-import award5 from './assets/Award5.jpeg';
-import award6 from './assets/Award6.jpg';
-import cut1 from './assets/cut1.jpg';
-import cut2 from './assets/cut2.jpg';
-import cut3 from './assets/Cut3.jpg';
-import blushImg from './assets/Blush.jpeg';
-import pickle1 from './assets/Pickle1.PNG';
-import pickle2 from './assets/Pickle2.PNG';
-import block1 from './assets/Block1.jpeg';
-import block2 from './assets/Block2.jpeg';
-import block3 from './assets/Block3.jpeg';
+import hairSalon1 from '/hair_salon_1.jpg';
+import shovaRai from '/assets/shova_rai.jpg';
+import heroImg from '/assets/Hero.jpg';
+import hero1 from '/assets/hero1.jpg';
+import review1 from '/assets/Review1.jpg';
+import review2 from '/assets/Review2.jpg';
+import review3 from '/assets/Review3.jpg';
+import review4 from '/assets/Review4.jpg';
+import review5 from '/assets/Review5.jpg';
+import review6 from '/assets/Review6.jpg';
+import award1 from '/assets/Award1.jpeg';
+import award2 from '/assets/Award2.jpeg';
+import award3 from '/assets/Award3.jpeg';
+import award4 from '/assets/Award4.jpg';
+import award5 from '/assets/Award5.jpeg';
+import award6 from '/assets/Award6.jpg';
+import cut1 from '/assets/cut1.jpg';
+import cut2 from '/assets/cut2.jpg';
+import cut3 from '/assets/Cut3.jpg';
+import blushImg from '/assets/Blush.jpeg';
+import pickle1 from '/assets/Pickle1.PNG';
+import pickle2 from '/assets/Pickle2.PNG';
+import block1 from '/assets/Block1.jpeg';
+import block2 from '/assets/Block2.jpeg';
+import block3 from '/assets/Block3.jpeg';
 
 export const navigation = [
   { name: 'Home', href: '#home' },
@@ -106,11 +106,11 @@ export const ventures = [
       cut2
     ],
     imageFallbacks: [
-      './hair_salon_1.jpg',
-      './shova_rai.jpg',
-      './Cut3.jpg',
-      './cut1.jpg',
-      './cut2.jpg'
+      '/hair_salon_1.jpg',
+      '/shova_rai.jpg',
+      '/Cut3.jpg',
+      '/cut1.jpg',
+      '/cut2.jpg'
     ],
     imageCaptions: [
       'Salon Ambience & Hair Care Station',
@@ -134,10 +134,10 @@ export const ventures = [
       shovaRai
     ],
     imageFallbacks: [
-      './Blush.jpeg',
-      './hero1.jpg',
-      './cut1.jpg',
-      './shova_rai.jpg'
+      '/Blush.jpeg',
+      '/hero1.jpg',
+      '/cut1.jpg',
+      '/shova_rai.jpg'
     ],
     imageCaptions: [
       'Blush Boutique Storefront & Collection Showcase',
@@ -158,8 +158,8 @@ export const ventures = [
       pickle2
     ],
     imageFallbacks: [
-      './Pickle1.PNG',
-      './Pickle2.PNG'
+      '/Pickle1.PNG',
+      '/Pickle2.PNG'
     ],
     imageCaptions: [
       "Zayel's Himalayan Pickle Product Pack 1",
@@ -179,9 +179,9 @@ export const ventures = [
       block3
     ],
     imageFallbacks: [
-      './Block1.jpeg',
-      './Block2.jpeg',
-      './Block3.jpeg'
+      '/Block1.jpeg',
+      '/Block2.jpeg',
+      '/Block3.jpeg'
     ],
     imageCaptions: [
       'Handcrafted Block Printing Artwork 1',
@@ -278,10 +278,10 @@ export const testimonials = [
 ];
 
 export const awardPhotos = [
-  { id: 1, title: 'Award & Honour Recognition', image: award1, fallbackImage: './Award1.jpeg' },
-  { id: 2, title: 'Award & Honour Recognition', image: award2, fallbackImage: './Award2.jpeg' },
-  { id: 3, title: 'Award & Honour Recognition', image: award3, fallbackImage: './Award3.jpeg' },
-  { id: 4, title: 'Award & Honour Recognition', image: award4, fallbackImage: './Award4.jpg' },
-  { id: 5, title: 'Award & Honour Recognition', image: award5, fallbackImage: './Award5.jpeg' },
-  { id: 6, title: 'Award & Honour Recognition', image: award6, fallbackImage: './Award6.jpg' },
+  { id: 1, title: 'Award & Honour Recognition', image: award1, fallbackImage: '/Award1.jpeg' },
+  { id: 2, title: 'Award & Honour Recognition', image: award2, fallbackImage: '/Award2.jpeg' },
+  { id: 3, title: 'Award & Honour Recognition', image: award3, fallbackImage: '/Award3.jpeg' },
+  { id: 4, title: 'Award & Honour Recognition', image: award4, fallbackImage: '/Award4.jpg' },
+  { id: 5, title: 'Award & Honour Recognition', image: award5, fallbackImage: '/Award5.jpeg' },
+  { id: 6, title: 'Award & Honour Recognition', image: award6, fallbackImage: '/Award6.jpg' },
 ];
