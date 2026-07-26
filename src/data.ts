@@ -106,11 +106,11 @@ export const ventures = [
       cut2
     ],
     imageFallbacks: [
-      '/hair_salon_1.jpg',
-      '/shova_rai.jpg',
-      '/Cut3.jpg',
-      '/cut1.jpg',
-      '/cut2.jpg'
+      './hair_salon_1.jpg',
+      './shova_rai.jpg',
+      './Cut3.jpg',
+      './cut1.jpg',
+      './cut2.jpg'
     ],
     imageCaptions: [
       'Salon Ambience & Hair Care Station',
@@ -134,10 +134,10 @@ export const ventures = [
       shovaRai
     ],
     imageFallbacks: [
-      '/Blush.jpeg',
-      '/hero1.jpg',
-      '/cut1.jpg',
-      '/shova_rai.jpg'
+      './Blush.jpeg',
+      './hero1.jpg',
+      './cut1.jpg',
+      './shova_rai.jpg'
     ],
     imageCaptions: [
       'Blush Boutique Storefront & Collection Showcase',
@@ -158,8 +158,8 @@ export const ventures = [
       pickle2
     ],
     imageFallbacks: [
-      '/Pickle1.PNG',
-      '/Pickle2.PNG'
+      './Pickle1.PNG',
+      './Pickle2.PNG'
     ],
     imageCaptions: [
       "Zayel's Himalayan Pickle Product Pack 1",
@@ -179,9 +179,9 @@ export const ventures = [
       block3
     ],
     imageFallbacks: [
-      '/Block1.jpeg',
-      '/Block2.jpeg',
-      '/Block3.jpeg'
+      './Block1.jpeg',
+      './Block2.jpeg',
+      './Block3.jpeg'
     ],
     imageCaptions: [
       'Handcrafted Block Printing Artwork 1',
@@ -278,10 +278,10 @@ export const testimonials = [
 ];
 
 export const awardPhotos = [
-  { id: 1, title: 'Award & Honour Recognition', image: award1, fallbackImage: '/Award1.jpeg' },
-  { id: 2, title: 'Award & Honour Recognition', image: award2, fallbackImage: '/Award2.jpeg' },
-  { id: 3, title: 'Award & Honour Recognition', image: award3, fallbackImage: '/Award3.jpeg' },
-  { id: 4, title: 'Award & Honour Recognition', image: award4, fallbackImage: '/Award4.jpg' },
-  { id: 5, title: 'Award & Honour Recognition', image: award5, fallbackImage: '/Award5.jpeg' },
-  { id: 6, title: 'Award & Honour Recognition', image: award6, fallbackImage: '/Award6.jpg' },
+  { id: 1, title: 'Award & Honour Recognition', image: award1, fallbackImage: './Award1.jpeg' },
+  { id: 2, title: 'Award & Honour Recognition', image: award2, fallbackImage: './Award2.jpeg' },
+  { id: 3, title: 'Award & Honour Recognition', image: award3, fallbackImage: './Award3.jpeg' },
+  { id: 4, title: 'Award & Honour Recognition', image: award4, fallbackImage: './Award4.jpg' },
+  { id: 5, title: 'Award & Honour Recognition', image: award5, fallbackImage: './Award5.jpeg' },
+  { id: 6, title: 'Award & Honour Recognition', image: award6, fallbackImage: './Award6.jpg' },
 ];
