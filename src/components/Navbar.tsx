@@ -25,7 +25,11 @@ export default function Navbar() {
           {/* Brand Monogram & Title */}
           <div className="flex-shrink-0 flex items-center gap-2">
             <a 
-              href="#" 
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
               className="text-2xl sm:text-3xl font-bold text-white tracking-tight drop-shadow-[0_2px_10px_rgba(212,175,55,0.4)] flex items-center gap-2" 
               style={{ fontFamily: '"Times New Roman", Times, serif' }}
             >
@@ -40,6 +44,11 @@ export default function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  const targetId = item.href.replace('#', '');
+                  document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className={`${buttonColors[idx % buttonColors.length]} transition-all duration-300 font-semibold text-[11px] md:text-xs xl:text-sm px-2.5 py-1 md:px-2.5 md:py-1 lg:px-3 lg:py-1.5 xl:px-3.5 xl:py-1.5 rounded-full shadow-md whitespace-nowrap border border-white/30 hover:scale-105 hover:border-amber-300 tracking-wider uppercase`}
                 style={{ fontFamily: '"Times New Roman", Times, serif' }}
               >
@@ -75,7 +84,14 @@ export default function Navbar() {
                 <a
                   key={item.name}
                   href={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsMobileMenuOpen(false);
+                    const targetId = item.href.replace('#', '');
+                    setTimeout(() => {
+                      document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                  }}
                   className={`block px-4 py-2.5 text-base font-semibold ${buttonColors[idx % buttonColors.length]} rounded-xl transition-all shadow-md border border-white/20`}
                   style={{ fontFamily: '"Times New Roman", Times, serif' }}
                 >

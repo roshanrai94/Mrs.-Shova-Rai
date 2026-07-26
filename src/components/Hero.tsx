@@ -61,10 +61,16 @@ export default function Hero() {
         transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10"
       >
-        <a href="#about" className="flex flex-col items-center gap-1 text-amber-400/80 hover:text-amber-300 transition-colors">
+        <button 
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+          }} 
+          className="flex flex-col items-center gap-1 text-amber-400/80 hover:text-amber-300 transition-colors bg-transparent border-none cursor-pointer"
+        >
           <span className="text-[10px] tracking-widest uppercase font-mono">Scroll</span>
           <ChevronDown size={20} />
-        </a>
+        </button>
       </motion.div>
     </section>
   );
