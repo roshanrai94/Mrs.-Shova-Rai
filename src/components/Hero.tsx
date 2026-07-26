@@ -61,6 +61,10 @@ export default function Hero() {
           >
             <a 
               href="#ventures" 
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('ventures')?.scrollIntoView({ behavior: 'smooth' });
+              }}
               className="bg-gradient-to-r from-amber-600 to-amber-400 hover:from-amber-500 hover:to-amber-300 text-[#0c0b09] px-8 py-3.5 rounded-full font-bold text-base sm:text-lg transition-all shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] hover:scale-105 uppercase tracking-wider font-sans border border-amber-300"
             >
               Explore Ventures

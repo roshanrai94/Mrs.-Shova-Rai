@@ -40,6 +40,10 @@ export default function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                }}
                 className={`${buttonColors[idx % buttonColors.length]} transition-all duration-300 font-semibold text-[11px] md:text-xs xl:text-sm px-2.5 py-1 md:px-2.5 md:py-1 lg:px-3 lg:py-1.5 xl:px-3.5 xl:py-1.5 rounded-full shadow-md whitespace-nowrap border border-white/30 hover:scale-105 hover:border-amber-300 tracking-wider uppercase`}
                 style={{ fontFamily: '"Times New Roman", Times, serif' }}
               >
@@ -75,7 +79,11 @@ export default function Navbar() {
                 <a
                   key={item.name}
                   href={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsMobileMenuOpen(false);
+                    document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                   className={`block px-4 py-2.5 text-base font-semibold ${buttonColors[idx % buttonColors.length]} rounded-xl transition-all shadow-md border border-white/20`}
                   style={{ fontFamily: '"Times New Roman", Times, serif' }}
                 >
