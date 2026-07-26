@@ -1,0 +1,109 @@
+import { motion } from 'motion/react';
+import { awards, mediaFeatures, speakingEngagements } from '../data';
+import { Award, Mic, Newspaper, Sparkles } from 'lucide-react';
+
+export default function Awards() {
+  return (
+    <section id="recognition" className="py-28 bg-[#100e0c] relative overflow-hidden border-t border-amber-500/20">
+      {/* Decorative ambient background lighting */}
+      <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-amber-500/5 rounded-full blur-[140px] pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-2 mb-3">
+            <Sparkles size={16} className="text-amber-400" />
+            <h2 className="text-xs font-sans tracking-[0.25em] text-amber-400 uppercase font-bold">Prestigious Accolades</h2>
+          </div>
+          <h3 className="text-4xl md:text-5xl font-serif text-white font-normal">
+            Honours & <span className="text-gradient-gold">Media Features</span>
+          </h3>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          
+          {/* Awards List */}
+          <div className="lg:col-span-2 space-y-8">
+            <div className="flex items-center mb-6">
+              <Award className="text-amber-400 mr-3" size={28} />
+              <h4 className="text-2xl font-serif text-white font-normal">Awards & Accolades</h4>
+            </div>
+            
+            <div className="space-y-4">
+              {awards.map((award, idx) => (
+                <motion.div 
+                  key={idx}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.08 }}
+                  className="p-6 rounded-2xl bg-[#151311] border border-amber-500/25 hover:border-amber-400/60 transition-all shadow-xl hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+                >
+                  <div className="pr-4">
+                    <h5 className="font-serif text-lg text-white font-medium mb-1">{award.title}</h5>
+                    <p className="text-sm font-sans text-amber-100/70 font-light">{award.venue}</p>
+                  </div>
+                  <span className="shrink-0 px-3.5 py-1.5 bg-amber-500/15 border border-amber-500/40 text-amber-300 text-xs font-bold font-mono rounded-full w-max shadow-inner">
+                    {award.year}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Media & Speaking */}
+          <div className="space-y-12">
+            
+            {/* Speaking Engagements */}
+            <div>
+              <div className="flex items-center mb-6">
+                <Mic className="text-amber-400 mr-3" size={24} />
+                <h4 className="text-xl font-serif text-white font-normal">Public Speaking</h4>
+              </div>
+              <div className="space-y-4">
+                {speakingEngagements.map((item, idx) => (
+                  <motion.div 
+                    key={idx}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.1 }}
+                    className="p-5 rounded-2xl bg-[#171411] text-amber-100 shadow-xl border border-amber-500/30"
+                  >
+                    <p className="text-xs text-amber-400 uppercase tracking-widest mb-1 font-mono font-bold">{item.title}</p>
+                    <p className="text-sm font-serif text-white">{item.venue}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+
+            {/* Featured In */}
+            <div>
+              <div className="flex items-center mb-6">
+                <Newspaper className="text-amber-400 mr-3" size={24} />
+                <h4 className="text-xl font-serif text-white font-normal">Featured In</h4>
+              </div>
+              <div className="flex flex-wrap gap-2.5">
+                {mediaFeatures.map((item, idx) => (
+                  <motion.span 
+                    key={idx}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.08 }}
+                    className="px-4 py-2 rounded-xl bg-[#171411] border border-amber-500/25 text-sm font-serif text-amber-200 shadow-md"
+                  >
+                    {item}
+                  </motion.span>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
+

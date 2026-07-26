@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-himalayan-brown: #181512;
+  --color-himalayan-brown-light: #2c2520;
+  --color-soft-beige: #F8F6F0;
+  --color-light-grey: #1a1816;
+  --color-rich-gold: #D4AF37;
+  --color-rich-gold-light: #F3D56B;
+  --color-deep-emerald: #064e3b;
+  
+  --font-serif: "Times New Roman", Times, serif;
+  --font-sans: "Times New Roman", Times, serif;
+  --font-mono: "Times New Roman", Times, serif;
+}
+
+@layer base {
+  html, body, button, input, textarea, select {
+    font-family: "Times New Roman", Times, serif !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[#0c0b09] text-[#f3f0e6] antialiased selection:bg-amber-500 selection:text-black;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-[#f8f6f0];
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-[#181512]/80 backdrop-blur-md border border-amber-500/20 shadow-2xl;
+  }
+  
+  .glass-dark {
+    @apply bg-[#12100e]/90 backdrop-blur-md border border-amber-500/30 shadow-2xl text-[#f3f0e6];
+  }
+
+  .couture-card {
+    @apply bg-[#151311] border border-amber-500/20 rounded-2xl transition-all duration-500 hover:border-amber-400/50 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)];
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#F3D56B] via-[#D4AF37] to-[#B8860B] bg-clip-text text-transparent;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-[#FFF0B3] via-[#F3D56B] to-[#D4AF37] bg-clip-text text-transparent;
+  }
+
+  .gold-divider {
+    @apply flex items-center justify-center gap-3 my-6 opacity-60;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-[#0c0b09];
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-amber-600/40 rounded-full border border-amber-500/20;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-amber-500;
+}
