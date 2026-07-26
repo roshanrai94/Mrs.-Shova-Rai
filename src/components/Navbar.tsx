@@ -18,14 +18,14 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="absolute top-0 left-0 w-full z-50 bg-gradient-to-b from-black/80 via-black/40 to-transparent py-5">
+    <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black/90 via-black/70 to-transparent py-4 backdrop-blur-sm">
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center gap-4">
           
           {/* Brand Monogram & Title */}
           <div className="flex-shrink-0 flex items-center gap-2">
             <a 
-              href="#" 
+              href="#home" 
               className="text-2xl sm:text-3xl font-bold text-white tracking-tight drop-shadow-[0_2px_10px_rgba(212,175,55,0.4)] flex items-center gap-2" 
               style={{ fontFamily: '"Times New Roman", Times, serif' }}
             >

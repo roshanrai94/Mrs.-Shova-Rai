@@ -40,7 +40,7 @@ export default function Contact() {
           {/* Contact Info */}
           <div>
             <h4 className="text-2xl font-serif text-white mb-4 font-normal">Contact Information</h4>
-            <p className="text-amber-100/75 font-sans mb-10 leading-relaxed font-light">
+            <p className="text-amber-100/75 font-sans mb-10 leading-relaxed font-light text-justify">
               Whether you're looking for bespoke styling, entrepreneurial collaboration, or community mentorship in Sikkim, feel free to get in touch with Mrs. Shova Rai.
             </p>
 

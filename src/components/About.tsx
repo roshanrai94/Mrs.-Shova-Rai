@@ -35,7 +35,7 @@ export default function About() {
               "{aboutContent.openingMessage}"
             </p>
             
-            <div className="space-y-4 text-amber-100/80 font-sans leading-relaxed text-base sm:text-lg font-light">
+            <div className="space-y-4 text-amber-100/80 font-sans leading-relaxed text-base sm:text-lg font-light text-justify">
               {aboutContent.intro}
             </div>
 

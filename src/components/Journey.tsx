@@ -59,7 +59,7 @@ export default function Journey() {
                       <h4 className="text-xl font-serif text-white font-medium mb-2 group-hover:text-amber-300 transition-colors">
                         {item.title}
                       </h4>
-                      <p className="text-sm font-sans text-amber-100/80 leading-relaxed font-light">
+                      <p className="text-sm font-sans text-amber-100/80 leading-relaxed font-light text-justify">
                         {item.description}
                       </p>
                     </div>

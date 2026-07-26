@@ -22,7 +22,7 @@ export default function Impact() {
               <Lightbulb size={28} />
             </div>
             <h3 className="text-2xl font-serif text-white mb-4 font-normal group-hover:text-amber-300 transition-colors">My Vision</h3>
-            <p className="text-amber-100/80 font-sans leading-relaxed font-light text-base sm:text-lg">
+            <p className="text-amber-100/80 font-sans leading-relaxed font-light text-base sm:text-lg text-justify">
               To create a self-reliant and creatively vibrant Sikkim where every individual, especially women and youth, has the skills and opportunities to build sustainable livelihoods and preserve our rich cultural heritage.
             </p>
           </motion.div>
@@ -38,7 +38,7 @@ export default function Impact() {
               <Target size={28} />
             </div>
             <h3 className="text-2xl font-serif text-white mb-4 font-normal group-hover:text-amber-300 transition-colors">My Mission</h3>
-            <p className="text-amber-100/80 font-sans leading-relaxed font-light text-base sm:text-lg">
+            <p className="text-amber-100/80 font-sans leading-relaxed font-light text-base sm:text-lg text-justify">
               To empower communities through hands-on training, mentorship, and fostering entrepreneurship in beauty, culinary arts, and traditional crafts, ensuring financial independence and growth.
             </p>
           </motion.div>
@@ -62,7 +62,7 @@ export default function Impact() {
             viewport={{ once: true }}
             className="lg:col-span-5"
           >
-            <p className="text-lg font-sans text-amber-100/90 leading-relaxed mb-8 font-light">
+            <p className="text-lg font-sans text-amber-100/90 leading-relaxed mb-8 font-light text-justify">
               Over the years, I have dedicated myself to training and uplifting various groups within our community. By sharing knowledge and practical skills, we build a stronger, more resilient society.
             </p>
             

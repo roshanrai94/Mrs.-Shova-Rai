@@ -47,11 +47,25 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg sm:text-xl md:text-2xl text-amber-100/90 font-medium tracking-wide text-center max-w-3xl mx-auto leading-relaxed"
+            className="text-lg sm:text-xl md:text-2xl text-amber-100/90 font-medium tracking-wide text-justify max-w-3xl mx-auto leading-relaxed mb-10"
             style={{ fontFamily: '"Times New Roman", Times, serif' }}
           >
             {heroContent.subheading}
           </motion.p>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="flex justify-center"
+          >
+            <a 
+              href="#ventures" 
+              className="bg-gradient-to-r from-amber-600 to-amber-400 hover:from-amber-500 hover:to-amber-300 text-[#0c0b09] px-8 py-3.5 rounded-full font-bold text-base sm:text-lg transition-all shadow-[0_0_20px_rgba(212,175,55,0.4)] hover:shadow-[0_0_30px_rgba(212,175,55,0.6)] hover:scale-105 uppercase tracking-wider font-sans border border-amber-300"
+            >
+              Explore Ventures
+            </a>
+          </motion.div>
         </motion.div>
       </div>
 
