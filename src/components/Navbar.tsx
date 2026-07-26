@@ -18,14 +18,14 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black/90 via-black/70 to-transparent py-4 backdrop-blur-sm">
+    <header className="absolute top-0 left-0 w-full z-50 bg-gradient-to-b from-black/80 via-black/40 to-transparent py-5">
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center gap-4">
           
           {/* Brand Monogram & Title */}
           <div className="flex-shrink-0 flex items-center gap-2">
             <a 
-              href="#home" 
+              href="#" 
               className="text-2xl sm:text-3xl font-bold text-white tracking-tight drop-shadow-[0_2px_10px_rgba(212,175,55,0.4)] flex items-center gap-2" 
               style={{ fontFamily: '"Times New Roman", Times, serif' }}
             >
@@ -40,10 +40,6 @@ export default function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
-                }}
                 className={`${buttonColors[idx % buttonColors.length]} transition-all duration-300 font-semibold text-[11px] md:text-xs xl:text-sm px-2.5 py-1 md:px-2.5 md:py-1 lg:px-3 lg:py-1.5 xl:px-3.5 xl:py-1.5 rounded-full shadow-md whitespace-nowrap border border-white/30 hover:scale-105 hover:border-amber-300 tracking-wider uppercase`}
                 style={{ fontFamily: '"Times New Roman", Times, serif' }}
               >
@@ -79,11 +75,7 @@ export default function Navbar() {
                 <a
                   key={item.name}
                   href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsMobileMenuOpen(false);
-                    document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
-                  }}
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className={`block px-4 py-2.5 text-base font-semibold ${buttonColors[idx % buttonColors.length]} rounded-xl transition-all shadow-md border border-white/20`}
                   style={{ fontFamily: '"Times New Roman", Times, serif' }}
                 >

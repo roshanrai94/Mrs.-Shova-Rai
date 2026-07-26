@@ -138,10 +138,8 @@ export default function Awards() {
                   className="w-full h-full max-h-[460px] object-contain rounded-xl filter contrast-[1.05] group-hover:scale-[1.02] transition-transform duration-500"
                   loading="lazy"
                   onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.onerror = null;
                     if (item.fallbackImage) {
-                      target.src = item.fallbackImage;
+                      (e.target as HTMLImageElement).src = item.fallbackImage;
                     }
                   }}
                 />

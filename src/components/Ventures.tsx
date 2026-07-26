@@ -32,7 +32,7 @@ export default function Ventures() {
           <h3 className="text-4xl md:text-5xl font-serif text-white font-normal mb-4">
             Business & Creative <span className="text-white font-semibold">Ventures</span>
           </h3>
-          <p className="text-amber-100/70 font-sans max-w-2xl mx-auto font-light text-sm md:text-base text-justify">
+          <p className="text-amber-100/70 font-sans max-w-2xl mx-auto font-light text-sm md:text-base">
             Explore our curated enterprises spanning luxury salon care, designer fashion, Himalayan culinary preservation, and traditional textile arts.
           </p>
         </div>

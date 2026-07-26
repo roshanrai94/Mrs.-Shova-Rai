@@ -51,7 +51,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h5 className="font-serif text-amber-300 font-medium mb-1">Atelier & Salon</h5>
-                  <p className="text-sm font-sans text-amber-100/80 font-light">Cutting Edge Hair & Beauty Salon,<br/>Namnang, Gangtok, Sikkim, India</p>
+                  <p className="text-sm font-sans text-amber-100/80 font-light text-justify">Cutting Edge Hair & Beauty Salon,<br/>Namnang, Gangtok, Sikkim, India</p>
                 </div>
               </div>
               
@@ -61,7 +61,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h5 className="font-serif text-amber-300 font-medium mb-1">Direct Correspondence</h5>
-                  <a href="mailto:cuttingedge723@gmail.com" className="text-sm font-sans text-amber-100/80 hover:text-amber-300 transition-colors font-light">
+                  <a href="mailto:cuttingedge723@gmail.com" className="text-sm font-sans text-amber-100/80 hover:text-amber-300 transition-colors font-light text-justify">
                     cuttingedge723@gmail.com
                   </a>
                 </div>
