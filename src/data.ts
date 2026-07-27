@@ -12,31 +12,31 @@ import {
   Clock
 } from 'lucide-react';
 
-import hairSalon1 from '/hair_salon_1.jpg';
-import shovaRai from '/assets/shova_rai.jpg';
-import heroImg from '/assets/Hero.jpg';
-import hero1 from '/assets/hero1.jpg';
-import review1 from '/assets/Review1.jpg';
-import review2 from '/assets/Review2.jpg';
-import review3 from '/assets/Review3.jpg';
-import review4 from '/assets/Review4.jpg';
-import review5 from '/assets/Review5.jpg';
-import review6 from '/assets/Review6.jpg';
-import award1 from '/assets/Award1.jpeg';
-import award2 from '/assets/Award2.jpeg';
-import award3 from '/assets/Award3.jpeg';
-import award4 from '/assets/Award4.jpg';
-import award5 from '/assets/Award5.jpeg';
-import award6 from '/assets/Award6.jpg';
-import cut1 from '/assets/cut1.jpg';
-import cut2 from '/assets/cut2.jpg';
-import cut3 from '/assets/Cut3.jpg';
-import blushImg from '/assets/Blush.jpeg';
-import pickle1 from '/assets/Pickle1.PNG';
-import pickle2 from '/assets/Pickle2.PNG';
-import block1 from '/assets/Block1.jpeg';
-import block2 from '/assets/Block2.jpeg';
-import block3 from '/assets/Block3.jpeg';
+import hairSalon1 from './assets/hair_salon_1.jpg';
+import shovaRai from './assets/shova_rai.jpg';
+import heroImg from './assets/Hero.jpg';
+import hero1 from './assets/hero1.jpg';
+import review1 from './assets/Review1.jpg';
+import review2 from './assets/Review2.jpg';
+import review3 from './assets/Review3.jpg';
+import review4 from './assets/Review4.jpg';
+import review5 from './assets/Review5.jpg';
+import review6 from './assets/Review6.jpg';
+import award1 from './assets/Award1.jpeg';
+import award2 from './assets/Award2.jpeg';
+import award3 from './assets/Award3.jpeg';
+import award4 from './assets/Award4.jpg';
+import award5 from './assets/Award5.jpeg';
+import award6 from './assets/Award6.jpg';
+import cut1 from './assets/cut1.jpg';
+import cut2 from './assets/cut2.jpg';
+import cut3 from './assets/Cut3.jpg';
+import blushImg from './assets/Blush.jpeg';
+import pickle1 from './assets/Pickle1.PNG';
+import pickle2 from './assets/Pickle2.PNG';
+import block1 from './assets/Block1.jpeg';
+import block2 from './assets/Block2.jpeg';
+import block3 from './assets/Block3.jpeg';
 
 export const navigation = [
   { name: 'Home', href: '#home' },
